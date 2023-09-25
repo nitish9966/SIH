@@ -1,0 +1,144 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the header with a linear gradient background, centered text, and padding */
+header {
+    background: linear-gradient(135deg,  #87CEEB, #1E90FF); /* Updated header background with gradient */
+    color: #fff; /* Updated text color */
+    text-align: right;
+    padding: 20px; /* Increased padding */
+    height: 60px; /* Increased height */
+    width: 100%; /* Increased width */
+    position: fixed;
+
+}
+
+/* Style the navigation menu in the header */
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Style the sidebar for the states */
+.sidebar {
+    background: linear-gradient( #87CEEB, #1E90FF); /* Updated sidebar background with gradient */
+    color: #fff; /* Updated text color */
+    width: 250px;
+    position: fixed;
+    top: 80px; /* Adjusted top position to account for the increased header height */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    padding: 20px;
+    list-style: none; /* Remove list bullets */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff; /* Updated text color */
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #0065b3;
+    border-radius: 15px;
+}
+
+/* Style the main content area */
+main {
+    margin-left: 220px; /* Adjust for the sidebar width */
+    padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+.image1{
+    display: flex;
+    margin-top: 100px;
+    height: 100px;
+    margin-left: 15px;
+   }
+   .image2{
+    top: 10px;
+   }
+.image2 img{
+    height: 100px;
+    width: 150px;
+    margin-left: 400px;
+}
+   p{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+   }
+   .box img{
+     height: 50vh;
+     width: 50vw;
+     margin-left: 170px;
+     margin-top: 20px;
+     padding-top: 30px;
+   }
+   main h1{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 350px;
+   }
+   .news{
+    margin-left: 100px;
+    padding: 10px;
+   }
+   .news ul{
+    margin-top: 10px;
+    list-style: none;
+   }
+   .news ul li a{
+    text-decoration: none;
+    padding-top: 20px;
+   }

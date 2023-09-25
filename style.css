@@ -1,0 +1,98 @@
+/* Reset some default styles for consistency */
+body, h2, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Apply a background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Create a container to center the form */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style the form elements */
+.login-form, .signup-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+    font-size: 30px; /* Slightly larger font size */
+    animation: colorChange 4s alternate infinite; /* Smooth text color change */
+}
+
+@keyframes colorChange {
+    from {
+        color: #fff;
+    }
+    to {
+        color: #FFC300; /* Bright yellow */
+    }
+}
+
+.label-container {
+    transform: rotateY(0deg); /* Initial state */
+    transition: transform 0.5s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px; /* Slightly smaller font size */
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input field appearance */
+    margin-bottom: 20px;
+    border: 2px solid #3498db; /* Border color matches the gradient */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    transform: scale(1.05); /* Slight scale-up effect on focus */
+}
+
+button {
+    background-color: #3498db; /* Blue button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+}
+
+button:hover {
+    background-color: #8e44ad; /* Darker blue on hover */
+    transform: scale(1.05) rotateY(15deg); /* Scale and rotate effect */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale-up on hover */
+}
